@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Question Game",
+  "description": "Preguntas sobre varios temas para jugar con amigos!",
+  "version": "1.0.1",
+  "icons": {
+    "128": "./images/sound-on.png"
+  },
+  "action": {
+    "default_icon": "./images/sound-on.png",
+    "default_popup": "index.html"
+  },
+  "permissions": ["unlimitedStorage", "notifications"]
+}
