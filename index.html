@@ -24,19 +24,25 @@
       class="d-flex justify-content-between align-items-center opacity-25"
       style="min-height: 10vh"
     >
-      <p>Desarrollado por Mariano Méndez</p>
+      <p class="textoSecundarios">Desarrollado por Mariano Méndez</p>
       <a
         href="https://www.linkedin.com/in/marianoezequielmendez/"
         target="_blank"
+        class="imgLinkedin"
       >
-        <img src="./images/linkedin.png" alt="Linkedin de Mariano Méndez" />
+        <img
+          src="./images/linkedin.png"
+          alt="Linkedin de Mariano Méndez"
+          class="imagenes"
+        />
       </a>
     </header>
     <main
       class="d-flex flex-column justify-content-center align-items-center"
       style="min-height: 80vh"
     >
-      <div id="question" class="m-5 fs-1">
+      <!-- <div id="question" class="m-5 fs-1 textoPrincipal"> -->
+      <div id="question" class="textoPrincipal">
         Selecciona el tipo de preguntas y lanza.
       </div>
       <div class="col-12 col-lg-4 d-flex justify-content-center">
@@ -59,17 +65,18 @@
       class="d-flex justify-content-between align-items-center opacity-50"
       style="min-height: 10vh"
     >
-      <p class="opacity-25">Versión 1.0.1</p>
+      <p class="opacity-25 texto">Versión 1.0.3</p>
       <button id="btn-music" class="rounded-circle border-0 opacity-50">
         <img
           id="img-music"
           src="./images/sound-on.png"
           alt="Volumen encendido"
+          class="imagenes"
         />
       </button>
     </footer>
     <audio id="audio" autoplay loop preload="auto">
-      <source src="./music/rain-and-nostalgia.mp3" type="audio/mp3" />
+      <source src="./music/la-cafeteria.mp3" type="audio/mp3" />
     </audio>
 
     <script

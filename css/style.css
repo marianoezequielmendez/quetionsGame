@@ -8,3 +8,54 @@ body {
     min-width: 100vw;
     min-height: 100vh  ;
 }
+
+.textoPrincipal{
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.0em;
+}
+
+.textoSecundarios {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.imagenes{
+    margin-right: 10px;
+    width: 80%;
+}
+
+.imgLinkedin{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .textoPrincipal{
+        width: 100%;
+        min-height: 30vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8em;
+    }
+    
+    .textoSecundarios {
+        margin: 0;
+        font-size: 0.8em;
+    }
+    
+    .imagenes{
+        width: 70%;
+    }
+
+    .imgLinkedin{
+        display: flex;
+        justify-content: center;
+    }
+}
