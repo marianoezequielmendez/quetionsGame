@@ -8,6 +8,7 @@ let btnMusic = document.getElementById("btn-music");
 let imgMusic = document.getElementById("img-music");
 let audio = document.getElementById("audio");
 let selectType = document.getElementById("select-type");
+let body = document.getElementById("body");
 
 // Funciones
 function getRandomInt(max) {
@@ -22,6 +23,43 @@ function cargarArray(file) {
       let lines = content.split(/\n/);
       lines.forEach((line) => preguntas.push(line));
     });
+}
+
+function cambiarFondo(section) {
+  switch (section) {
+    case "Básicas":
+      body.className = "";
+      break;
+
+    case "Filosóficas":
+      body.className = "";
+      body.classList.add("bg-blue");
+      break;
+
+    case "Graciosas":
+      body.className = "";
+      body.classList.add("bg-orange");
+      break;
+
+    case "Incómodas":
+      body.className = "";
+      body.classList.add("bg-purple");
+      break;
+
+    case "Interesantes":
+      body.className = "";
+      body.classList.add("bg-yellow");
+      break;
+
+    case "Sexuales":
+      body.className = "";
+      body.classList.add("bg-red");
+      break;
+
+    default:
+      body.className = "";
+      break;
+  }
 }
 
 // Botón para lanzar preguntas
@@ -53,6 +91,8 @@ window.addEventListener("load", function (event) {
 selectType.addEventListener("change", () => {
   file = `./questions/${selectType.value}.txt`;
   cargarArray(file);
+  cambiarFondo(selectType.value);
+  question.innerHTML = "Selecciona el tipo de preguntas y lanza.";
 });
 
 // LocalStorage para la música

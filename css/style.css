@@ -6,7 +6,8 @@
 
 body {
     min-width: 100vw;
-    min-height: 100vh  ;
+    min-height: 100vh ;
+    background-image: linear-gradient(10deg, #ffffff, #cdcdcd, #dcdcdc, #f5f5f5);
 }
 
 .textoPrincipal{
@@ -20,6 +21,7 @@ body {
 }
 
 .textoSecundarios {
+    margin: 0;
     margin-left: 10px;
     font-size: 1.2em;
 }
@@ -58,4 +60,29 @@ body {
         display: flex;
         justify-content: center;
     }
+}
+
+/* Fondos */
+.bg-blue {
+    background-image: linear-gradient(10deg, #1c44ff, #4676ec, #45a4d7, #00d1c1);
+    color: white
+}
+
+.bg-orange {
+    background-image: linear-gradient(10deg, #f06c11, #fa934f, #ffb783, #ffdcb8);
+    color: white
+}
+
+.bg-purple {
+    background-image: linear-gradient(10deg, #960c85, #a16d95, #bc53b2, #bf1cbaa4);
+    color: white
+}
+
+.bg-yellow {
+    background-image: linear-gradient(10deg, #b7c3a8, #cfd691, #e4eb77, #f7ff56);
+}
+
+.bg-red {
+    background-image: linear-gradient(10deg, #ff2a2b, #ff7658, #ffab87, #ffdcb8);
+    color: white
 }
